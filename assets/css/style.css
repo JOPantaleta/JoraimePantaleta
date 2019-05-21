@@ -152,16 +152,18 @@ body
 	animation-delay: 4s;
 }
 
-.buttonBox a
+.buttonBox i
 {
 	position: absolute;
 	top: 75%;
-	margin-left: 46% !important;
+	margin-left: 50% !important;
 	transform: translate(-50%, -50%);
 }
 
-.buttonBox a
+.buttonBox i
 {
+	font-size: 	50px;
+	color: 	white;
 	opacity: 0;
 	display: inline-block;
 	animation: animate 1s linear forwards;
@@ -188,10 +190,9 @@ body
 		filter: blur(0);
 	}
 }
-.buttonBox a:nth-child(1)
+.buttonBox i:nth-child(1)
 {
-	animation-delay: 6.2s;
-	border: white 2px solid;
+	animation-delay: 7s;
 
 }
 
