@@ -15,6 +15,10 @@
 	<link href="https://fonts.googleapis.com/css?family=Felipa" rel="stylesheet">
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.css">
+
+
 	
 </head>
 <body>
@@ -27,13 +31,13 @@
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav mr-5 ml-auto">
 					<li class="nav-item mr-4">
-						<a class="nav-link text-light" href="#">About</a>
+						<a class="nav-link text-light" href="#AboutSection">About</a>
 					</li>
 					<li class="nav-item mr-4">
-						<a class="nav-link text-light" href="#">Projects</a>
+						<a class="nav-link text-light" href="#ProjectSection">Projects</a>
 					</li>
 					<li class="nav-item mr-5">
-						<a class="nav-link text-light mr-5" href="#">Contact</a>
+						<a class="nav-link text-light mr-5" href="#ContactSection">Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -60,52 +64,79 @@
 				</h5>
 			</div>
 			<div class="buttonBox">
-				<button class="btn btn-outline-light font-weight-bold">Tell me more</button>
+				<button href="#AboutSection" class="btn btn-outline-light font-weight-bold">Tell me more</button>
 			</div>
 
 		</section>
 
 		<!-- About Page -->
 		<!-- This page is about the developer's background and skills -->
-		<section class="aboutPage">
+		<section class="aboutPage" id="AboutSection">
 			<div class="container">
 				<h1 class="pageTitle text-light"><span class="font-weight-bold">A</span>bout the Developer</h1>
 			</div>
-			<div class="row containerRow no-gutters">
+			<div class="row containerRow no-gutters mt-5">
 				<div class="col-md-6 no-gutters columnContainer">
 					<div class="cardImage">
 						<div class="imgBox">
 							<img src="assets/images/jop.jpg">
 						</div>
-						<div class="detailText">
-							<h2>Joraime O. Pantaleta</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat.</p>
+						<div class="detailText ">
+							<h4 class="ml-2 py-2 px-1 font-weight-bold text-light mt-4" style="font-family: sans-serif;">Joraime O. Pantaleta</h4>
+							<p style="font-size: 9pt; margin:0; font-family: sans-serif;" class="text-center text-light font-weight-bold ml-3"> Full Stack Web Developer.</p>
+							<p style="font-size: 9pt; margin:0; font-family: sans-serif;" class="text-center text-light font-weight-bold ml-3"> Certified Public Accountant.</p>
+							<!-- <p style="font-size: 9pt; margin:0; font-family: sans-serif;" class="text-center text-light font-weight-bold ml-3"> Information Systems Auditor.</p> -->
+							<p style="font-size: 8pt; margin:0; font-family: sans-serif;" class="text-center text-light font-italic ml-3 mt-4"> Creative and persistent, I am a business professional with the passion for creating web applications. I love to collaborate and share ideas with colleagues and fellow professionals. I seek to pass my limits every now and then so to strive for excellence.</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-6 no-gutters ">
+					<div class="row justify-content-center no-gutters">
+						<label class="form-group">
+							<h1 class="font-weight-bold" style="font-family: sans-serif; border-bottom: 5px red solid; color: red; text-shadow: 2px 5px black;">
+								Skill Sets
+							</h1>
+						</label>
+					</div>
+					
 					<div class="media  contentColumn">
 						<i class="fab fa-css3"></i>
 						<div class="media-body">
-							<h5 class="mt-0">Front-end Web Development</h5>
-							<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+							<h5 class="mt-0 font-weight-bold" style="color:black;">Front-end Web Development</h5>
+							<div class="chartContainer">
+								<ul>
+									<li>HTML</li>
+									<li>CSS</li>
+									<li>Bootstrap</li>
+									<li>JavaScript</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 					<div class="media contentColumn">
 						<i class="fab fa-node-js"></i>
 						<div class="media-body">
-							<h5 class="mt-0">Back-end Web Development</h5>
-							<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+							<h5 class="mt-0 font-weight-bold" style="color:black;">Back-end Web Development</h5>
+							<div class="chartContainer">
+								<ul>
+									<li>PHP</li>
+									<li>Laravel</li>
+									<li>MySQL</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 					<div class="media contentColumn">
 						<i class="fas fa-qrcode"></i>
 						<div class="media-body">
-							<h5 class="mt-0">E-commerce Development</h5>
-							<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+							<h5 class="mt-0 font-weight-bold" style="color:black;">Application Programming Interface</h5>
+							<div class="chartContainer">
+								<ul>
+									<li>MongoDB</li>
+									<li>ExpressJS</li>
+									<li>NodeJS</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -115,9 +146,9 @@
 
 	<!-- Projects Page -->
 	<!-- This page is about the developer's projects -->
-	<section class="projectPage">
+	<section class="projectPage" id="ProjectSection">
 		<div class="container">
-			<h1 class="pageTitle text-dark"><span class="font-weight-bold">P</span>rojects worked on</h1>
+			<h1 class="pageTitle text-dark"><span class="font-weight-bold">P</span>rojects</h1>
 		</div>
 		<div class="projectContainer">
 			<div class="prjBox">
@@ -129,7 +160,7 @@
 					<div class="content">
 						<i class="fas fa-map-marked"></i>
 						<h3>Gallivant</h3>
-						<a href="#">View</a>
+						<a href="https://jopantaleta.github.io/Capstone1/" target="_blank">View</a>
 					</div>
 				</div>
 			</div>
@@ -166,7 +197,7 @@
 					<div class="content">
 						<i class="fas fa-cloud-sun-rain"></i>
 						<h3>Weather Channel</h3>
-						<a href="#">View</a>
+						<a href="https://mcwc.tru.io" target="_blank">View</a>
 					</div>
 				</div>
 			</div>
@@ -177,7 +208,7 @@
 
 	<!-- Contact Page -->
 	<!-- This page is about the contact details -->
-	<section class="contactPage">
+	<section class="contactPage" id="ContactSection">
 		<div class="container">
 			<h1 class="pageTitle text-light"><span class="font-weight-bold">C</span>ontact Me</h1>
 		</div>
@@ -267,14 +298,18 @@
 </footer>
 
 </body>
-<script
-  src="http://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+<script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+
 <script type="text/javascript" src="assets/js/script.js"></script>
+
+
 
 
 </html>

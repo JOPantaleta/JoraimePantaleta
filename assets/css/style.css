@@ -101,7 +101,7 @@ body
 {
 	position: absolute;
 	top: 60%;
-	padding-left: 56.5vw !important;
+	padding-left: 56vw !important;
 	transform: translateY(-50%);
 }
 
@@ -660,7 +660,7 @@ body
 
 .buttonCase li:after
 {
-	filter: blur(40px);
+	filter: blur(60px);
 
 }
 
@@ -690,7 +690,7 @@ body
 	text-shadow: 0 2px 5px rgba(0,0,0,0.2);
 	transition: 0.5s;
 	transform: rotateY(0deg) scale(0.8);
-	opacity: 0.2;
+	opacity: 0.6;
 }
 
 
